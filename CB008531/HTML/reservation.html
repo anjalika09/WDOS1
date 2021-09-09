@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" type="text/css" href="CSS/reservation.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="icon" type="image/pngt" href="Images/logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+  <body>
+        <!-- Header section which includes the logo and social media buttons-->
+        <header>
+          <a href="welcomepage.html">
+          <img class="logo" src="images/logo1.png" alt="logo"></a>
+                   <!--The main navigation-->
+ 
+             <input type="checkbox" id="active">
+             <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+             <div class="wrapper">
+                 <ul>
+                    <li><a href="home.html">Home</a> </li>
+                    <li><a href="accommodation.html">Accommodation</a> </li>
+                    <li><a href="dinning.html">Dinning</a> </li>
+                    <li><a href="reservation.html">Reservation</a> </li>
+                    <li><a href="contact.html">Contact</a> </li>
+                   
+                    </ul>
+               </div>
+               
+          </header>   
+
+  <!--reserve multiple rooms-->
+    <main> 
+         <!--Taxi Ordering Form-->       
+<div class="container1">
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="roomType">Room type</label>
+    </div>
+    <div class="col-75">
+      <select id="roomType" name="roomType" >
+		<option value="">Select Room type</option>
+        <option value="Standard">Standard</option>
+        <option value="Premium">Premium</option>
+        <option value="Deluxe">Deluxe</option>
+		<option value="Suit">Suit</option>
+      </select>
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-25">
+      <label for="meal">Meal type</label>
+    </div>
+    <div class="col-75">
+      <select  name="meal" id="meal">
+	  <option value="">Select meal type</option>
+        <option value="BB">BB</option>
+        <option value="HB">HB</option>
+        <option value="FB">FB</option>
+      </select>
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-25">
+      <label for="Occupancy">Occupancy</label>
+    </div>
+    <div class="col-75">
+      <select name="Occupancy" id="Occupancy" >
+	  <option value="">Select Occupancy Type</option>
+        <option value="One person">One person</option>
+        <option value="Two people">Two people</option>
+        <option value="Three people">Three people</option>
+      </select>
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Duration</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Duration" name="Duration" placeholder="Duration" >
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-25">
+      <label for="Extra">Extra</label>
+    </div>
+    <div class="col-75">
+      <select name="Extra" id="Extra" >
+	  <option value="">Select Extra Type</option>
+        <option value="	Cake on arrival">	Cake on arrival</option>
+        <option value="extra bed">extra bed</option>
+        <option value="candle light dinner on the first day ">candle light dinner on the first day </option>
+      </select>
+    </div>
+  </div><br><br>
+  
+  <div class="btnrow">
+	<input class="btn" type="submit" value="Current Reservation" >
+	<input class="btn" type="submit" value="Cost of current reservation(s)" > 
+	<input class="btn" type="submit" value="Final reservation">  
+    <input class="btn" type="submit" value="Cost of final reservation(s)">
+
+  </div>
+ 
+</div>
+
+<div class="row">
+
+  <div class="tcolumn">
+  <h3 class=".">current reservation</h3>
+	  <label class = "label" for="current reservation" id="current reservation">Current reservation :</label><br>
+	  <label class = "label" for="Cost of current reservation" id="Cost of current reservation">Cost of current reservation(s):0</label><br>
+	  <label class = "label" for="Final reservation" id="Final reservation">Final reservation :</label><br>
+	  <label class = "label" for="Cost of final reservation" id="Cost of final reservation">Cost of final reservation(s):0</label>  
+  </div>
+  
+</div>
+
+    <!--Page Footer-->
+    <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2>Santani</h2>
+  <div class="content">
+              <p> Designed to free the mind while treading as lightly as possible on the earth, our private sanctuaries blur the distinction between indoors and out, to encourage you to rest, relax and meditate while inhaling the purest, freshest air and living within in this pristine, truly inspiring scenery that surrounds us.</strong>
+  <div class="social">
+                <a href="https://www.facebook.com/santaniwellness/"><span class="fa fa-facebook-f"></span></a>
+                <a href="https://www.instagram.com/santani_wellness/"><span class="fa fa-instagram"></span></a>
+                <a href="https://twitter.com/Santani_lk"><span class="fa fa-twitter"></span></a>
+          </div>
+       </div>
+  </div>
+  <div class="right box">
+            <h2>Address</h2>
+  <div class="content">
+              <div class="place">
+                <a href="contact.html"><span class="fa fa-map-marker"></span></a>
+                <span class="text">Santani Wellness Resort, Arantenna Estate, Werapitiya, Kandy, Sri Lanka.</span>
+              </div>
+  <div class="phone">
+    <a href="contact.html"><span class="fa fa-phone"></span></a>
+                <span class="text">(+94) 70 366 9110</span>
+              </div>
+  <div class="email">
+    <a href="contact.html"><span class="fa fa-envelope"></span></a>
+                <span class="text">reservations@santani.lk</span>
+              </div>
+  </div>
+        </div>
+      </div>
+      </footer>
+</main>
+</body>
+</html>
+  
